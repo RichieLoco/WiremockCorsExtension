@@ -1,0 +1,10 @@
+{
+	"priority": 1,
+	"request": {		
+		"method" : "OPTIONS"
+	},
+	"response": {
+		"status": 200,
+		"body": "NOTE - DO NOT DELETE THIS FILE - it is part of a workaround for the CORS issue experienced when accessing Wiremock via Swagger's 'Try it now' feature in Chrome/Edge/Firefox browsers."
+	}
+}
