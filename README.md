@@ -13,10 +13,10 @@ It does this by ensuring the following:
 ## Usage
 Within Wiremock Standalone you can invoke an extension(s) in the wiremock instance by doing the following:
 ```
-$ java -cp "<wiremock_standalone_jar>;<wiremock_extension_jar_1>;...;<wiremock_extension_jar_n>" <path_to_wiremock_server_runner_main_class> --extension <comma_delimited_path_to_extension_main_classes> <other_params>
+$ java -cp "<wiremock_standalone_jar>:<wiremock_extension_jar_1>:...:<wiremock_extension_jar_n>" <path_to_wiremock_server_runner_main_class> --extensions <comma_delimited_path_to_extension_main_classes> <other_params>
 ```
 So, for example:
 ```
-$ java -cp "wiremock-standalone-2.11.0.jar;wiremockCorsExtension-0.0.1.jar" com.github.tomakehurst.wiremock.standalone.WireMockServerRunner --extension com.aviva.uk.integration.wiremock.CORSResponseHeaderTransformer --port 9000
+$ java -cp "wiremock-standalone-2.11.0.jar:wiremockCorsExtension-0.0.1.jar" com.github.tomakehurst.wiremock.standalone.WireMockServerRunner --extensions com.aviva.uk.integration.wiremock.CORSResponseHeaderTransformer --port 9000
 ```
 In addition, the cors_fix.json found in src/main/resources will need to be placed into the mappings/ directory in your Wiremock directory.
