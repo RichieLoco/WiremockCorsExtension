@@ -20,3 +20,6 @@ So, for example:
 $ java -cp "wiremock-standalone-2.11.0.jar:wiremockCorsExtension-0.0.1.jar" com.github.tomakehurst.wiremock.standalone.WireMockServerRunner --extensions com.aviva.uk.integration.wiremock.CORSResponseHeaderTransformer --port 9000
 ```
 In addition, the cors_fix.json found in src/main/resources will need to be placed into the mappings/ directory in your Wiremock directory.
+
+Thanks,
+Rich
